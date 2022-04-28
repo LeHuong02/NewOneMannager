@@ -36,7 +36,6 @@ public class DangNhapActivity extends AppCompatActivity {
         findViewById(R.id.btn_dangnhap).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), TrangChuActivity.class));
                 ProgressDialog dialog = new ProgressDialog(DangNhapActivity.this);
                 dialog.setTitle("Đang đăng nhập");
                 dialog.show();
