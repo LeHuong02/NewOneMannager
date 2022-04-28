@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
         <TextView
+            android:id="@+id/edt_name"
             android:drawableEnd="@drawable/ic_person"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -44,7 +45,7 @@
             android:layout_marginTop="20dp"
             android:drawableLeft="@drawable/ic_username"
             android:gravity="center"
-            android:id="@+id/edit_taikhoan_dangky"
+            android:id="@+id/edt_taikhoan"
             android:hint="Nhập tài khoản"
             android:layout_gravity="center"
             android:layout_width="300dp"
@@ -54,19 +55,8 @@
             android:layout_marginTop="20dp"
             android:drawableLeft="@drawable/ic_password"
             android:inputType="textPassword"
-            android:id="@+id/edit_nhapmatkhau_dangky"
+            android:id="@+id/edt_matkhau"
             android:hint="Nhập mật khẩu"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:background="@drawable/bovien"/>
-        <EditText
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/ic_password"
-            android:inputType="textPassword"
-            android:id="@+id/edit_nhaplaimatkhau_dangky"
-            android:hint="Nhập lại mật khẩu"
             android:gravity="center"
             android:layout_gravity="center"
             android:layout_width="300dp"

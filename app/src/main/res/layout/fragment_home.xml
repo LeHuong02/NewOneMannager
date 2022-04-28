@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".Fragments.HomeFragment">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,21 +50,22 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="#8C00796B"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:background="#8C00796B"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/tv_7"
@@ -113,53 +115,57 @@
                 <com.denzcoskun.imageslider.ImageSlider
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    />
+                    android:layout_weight="2" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-               >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="For you"
-                android:textSize="20sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:id="@+id/tv_9"/>
-                <androidx.cardview.widget.CardView
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="200dp">
-                    <com.denzcoskun.imageslider.ImageSlider
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp" />
-                </androidx.cardview.widget.CardView>
+                    android:layout_marginTop="10dp"
+                    android:text="For you"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <org.lucasr.twowayview.TwoWayView
+                    android:id="@+id/lv_foryou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" />
+
 
             </LinearLayout>
+
             <TextView
+                android:id="@+id/tv_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="News"
-                android:id="@+id/tv_10"
-                android:textSize="20sp"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                android:layout_marginLeft="20dp"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_margin="5dp"
+                    android:layout_weight="1"
                     app:cardCornerRadius="30dp">
 
                     <ImageView
@@ -167,69 +173,109 @@
                         android:layout_height="150dp"
                         android:background="@drawable/coffeegg1" />
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_margin="5dp"
+                    android:layout_weight="1"
                     app:cardCornerRadius="30dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:background="@drawable/coffeegg2"/>
+                        android:background="@drawable/coffeegg2" />
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_margin="5dp"
+                    android:layout_weight="1"
                     app:cardCornerRadius="30dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:background="@drawable/coffeegg3"/>
+                        android:background="@drawable/coffeegg3"
+                        android:scaleType="centerCrop" />
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
+                    android:id="@+id/tv_11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_11"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/aloevera"
                     android:text="A blissful start for a great week ahead!"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/aloevera"
-                    android:layout_marginLeft="10dp"/>
+                    android:textSize="15sp" />
+
                 <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/tv_12"
-                android:text="Share the Holiday "
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:layout_weight="1"
-                android:fontFamily="@font/aloevera"
-                android:layout_marginLeft="10dp"/>
-                <TextView
+                    android:id="@+id/tv_12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv_13"
-                    android:text="Wake up and wanna do something cute?"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/aloevera"
-                    android:layout_marginLeft="10dp"/>
+                    android:text="Share the Holiday "
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/aloevera"
+                    android:text="Wake up and wanna do something cute?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
             </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Loại đồ uống"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <org.lucasr.twowayview.TwoWayView
+                android:id="@+id/lv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Đồ uống"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <GridView
+                android:id="@+id/lv_food"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_margin="20dp"
+                android:numColumns="2" />
 
         </LinearLayout>
 

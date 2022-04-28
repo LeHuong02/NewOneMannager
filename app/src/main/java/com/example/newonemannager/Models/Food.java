@@ -2,15 +2,9 @@ package com.example.newonemannager.Models;
 
 public class Food {
     int ID;
-
     int IDCategory;
-
-
     String Name;
-
-
     String Image;
-
     byte Status;
 
     public Food(int ID, int IDCategory, String name, String image, byte status) {

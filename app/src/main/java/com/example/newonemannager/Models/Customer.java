@@ -74,4 +74,10 @@ public class Customer {
         Avatar = avatar;
         Username = username;
     }
+
+    public Customer(String fullName, int point, String username) {
+        FullName = fullName;
+        Point = point;
+        Username = username;
+    }
 }

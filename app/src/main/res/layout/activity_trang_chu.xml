@@ -9,7 +9,8 @@
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/cv" />
+        android:layout_above="@id/cv"
+        android:id="@+id/view_main"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv"
@@ -22,7 +23,7 @@
         app:cardCornerRadius="50dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/nav_bottom"
+            android:id="@+id/nav_main"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

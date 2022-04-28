@@ -1,7 +1,8 @@
 package com.example.newonemannager.API;
 
 import com.example.newonemannager.Models.Account;
-import com.example.newonemannager.Models.Commmon;
+import com.example.newonemannager.Models.CategoryOfFood;
+import com.example.newonemannager.Models.Common;
 import com.example.newonemannager.Models.Customer;
 import com.example.newonemannager.Models.Emphloyee;
 import com.example.newonemannager.Models.Food;
@@ -10,7 +11,6 @@ import com.example.newonemannager.Models.Material;
 import com.example.newonemannager.Models.Order;
 import com.example.newonemannager.Models.OrderDetail;
 import com.example.newonemannager.Models.UsedMaterial;
-import com.google.android.gms.common.api.Api;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -21,7 +21,9 @@ import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface ApiService {
@@ -31,7 +33,7 @@ public interface ApiService {
             .connectTimeout(30, TimeUnit.SECONDS)
             .build();
     ApiService api = new Retrofit.Builder()
-            .baseUrl(Commmon.baseUrl)
+            .baseUrl(Common.baseUrl)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .client(okHttpClient)
             .build()
@@ -54,5 +56,12 @@ public interface ApiService {
     Call<List<OrderDetail>>getOrderDetail();
     @GET("api/UsedMaterials/GetUsedMaterials")
     Call<List<UsedMaterial>>getUsedMaterial();
-
+    @POST("api/Accounts/Postaccount")
+    Call<Integer>postAccount(@Body Account account);
+    @POST("api/Customers/Postcustomers")
+    Call<Integer>postCustomer(@Body Customer customer);
+    @GET("api/Accounts/Login")
+    Call<Account>login(@Query("username") String username,@Query("password") String password);
+    @GET("api/categories/getcategorylist")
+    Call<List<CategoryOfFood>>getCategoryList();
 }

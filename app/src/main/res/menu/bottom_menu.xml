@@ -7,13 +7,9 @@
     <item
         android:id="@+id/giohang"
         android:icon="@drawable/shopping_cart"
-        android:title="Giỏ hàng" />
+        android:title="Khám phá" />
     <item
-        android:id="@+id/thegiamgia"
-        android:icon="@drawable/ticket"
-        android:title="Giảm giá" />
-    <item
-        android:id="@+id/vitri"
+        android:id="@+id/veri"
         android:icon="@drawable/map_marker"
-        android:title="Vị trí" />
+        android:title="Verification" />
 </menu>
