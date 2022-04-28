@@ -1,6 +1,7 @@
 package com.example.newonemannager.Activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
@@ -47,6 +48,7 @@ public class TimKiemActivity extends AppCompatActivity {
                             if (response.body() != null) {
                                 for (Food food : response.body()
                                 ) {
+                                    Log.e("TAG",food.getName());
                                     foodList.add(food);
                                     adapter.notifyDataSetChanged();
                                 }
