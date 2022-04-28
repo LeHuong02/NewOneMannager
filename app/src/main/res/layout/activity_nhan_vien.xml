@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.NhanVienActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80018786"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_sangtrai"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/angle_small_left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:hint="Search "
+                android:textColor="#be1d1d"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btn_timkiem"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/search"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:id="@+id/btnthem"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/plus_small" />
+
+        </LinearLayout>
+
+        <ListView
+        android:id="@+id/lvnv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

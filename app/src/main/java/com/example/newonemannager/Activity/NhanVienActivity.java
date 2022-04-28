@@ -6,12 +6,11 @@ import android.os.Bundle;
 
 import com.example.newonemannager.R;
 
-public class DangNhapActivity extends AppCompatActivity {
+public class NhanVienActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dang_nhap);
-
+        setContentView(R.layout.activity_nhan_vien);
     }
 }
