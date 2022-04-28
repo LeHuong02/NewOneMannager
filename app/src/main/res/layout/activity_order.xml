@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.OrderActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_sangtrai"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/angle_small_left"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:id="@+id/img_3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/logocoffee" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:text="Siren Order"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="80dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imgb_douong1"
+                android:background="@drawable/douong4" />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tv_douong1"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Cinnamon Dolce Latte"
+            android:textSize="25sp"
+            android:fontFamily="@font/aloevera"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_douong5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We add freshly steamed milk and cinnamon dolce flavored"
+            android:textSize="15sp"
+            android:gravity="center"
+           />
+        <TextView
+            android:id="@+id/tv_douong6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="syrup to our classic espresso, topped with sweetened whipped cream and a cinnamon..."
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_douong7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See more"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/teal_700"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tv_douong8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="------------------------------------------------------------------------------------------"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_giatien"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:text="$19.65"
+            android:textColor="@color/teal_700"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:text="+"
+            android:textSize="25sp"
+            android:textColor="#004D40"
+            android:textStyle="bold"
+            android:id="@+id/btn_cong"
+            android:background="@drawable/bovien"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:id="@+id/tv_so"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="30sp"
+            android:background="#331DE9B6"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:text="-"
+            android:textSize="25sp"
+            android:textColor="#004D40"
+            android:textStyle="bold"
+            android:id="@+id/btn_tru"
+            android:background="@drawable/bovien"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/flame"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/img_hot"/>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:id="@+id/btn_hot"
+            android:text="Hot"
+            android:textStyle="bold"
+            android:textColor="#870101"
+            android:textSize="15sp"
+           android:background="@drawable/bovien"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/snowflakes"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/img_iced"/>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:id="@+id/btn_iced"
+            android:text="Clod"
+            android:textStyle="bold"
+            android:textColor="#023DD1"
+            android:textSize="15sp"
+            android:background="@drawable/bovien"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_short"
+            android:layout_width="69dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/bovien"
+            android:text="Short"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_tall"
+            android:layout_width="69dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bovien"
+            android:text="Tall"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_grande"
+            android:layout_width="69dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bovien"
+            android:text="Grande"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_venti"
+            android:layout_width="69dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bovien"
+            android:text="Venti"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/shopping_cart"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/img_giohang"/>
+
+    <Button
+        android:id="@+id/btn_giohang"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bovien"
+        android:text="Add to cart"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/check"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/img_order"/>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="115dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bovien"
+        android:text="Order now"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+</LinearLayout>
+
+</LinearLayout>
