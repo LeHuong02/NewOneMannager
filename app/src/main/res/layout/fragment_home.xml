@@ -273,7 +273,7 @@
             <GridView
                 android:id="@+id/lv_food"
                 android:layout_width="match_parent"
-                android:layout_height="1000dp"
+                android:layout_height="2000dp"
                 android:layout_margin="20dp"
                 android:numColumns="2" />
 

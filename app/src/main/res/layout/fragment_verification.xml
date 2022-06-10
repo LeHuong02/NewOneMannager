@@ -71,91 +71,103 @@
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lv_giohang"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="436dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/img_voucher"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/ticket" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lv_giohang"
+                android:layout_width="match_parent"
+                android:layout_height="436dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-            <TextView
-                android:id="@+id/tv_voucher"
-                android:layout_width="137dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Coffee Voucher"
-                android:textSize="15sp"
-                android:textStyle="normal" />
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_voucher"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/ticket" />
+
+                    <TextView
+                        android:id="@+id/tv_voucher"
+                        android:layout_width="137dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Coffee Voucher"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/btn_voucher"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="90dp"
+                        android:background="@color/white"
+                        android:text="Chọn hoặc nhập mã  >"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_tthanhtoan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Tổng Thanh Toán"
+                        android:textColor="@color/teal_700"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+
+                        android:textColor="@color/teal_700"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
 
             <Button
-                android:id="@+id/btn_voucher"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginLeft="90dp"
-                android:background="@color/white"
-                android:text="Chọn hoặc nhập mã  >"
-                android:textSize="10sp"
-                android:textStyle="normal" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_tthanhtoan"
+                android:id="@+id/btn_muahang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:text="Tổng Thanh Toán"
-                android:textColor="@color/teal_700"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/tv_sum"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="190dp"
-                android:text="$19.65"
-                android:textColor="@color/teal_700"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
+                android:layout_gravity="center"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="120dp"
+                android:background="@color/teal_700"
+                android:text="Mua hàng"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
         </LinearLayout>
+    </ScrollView>
 
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_muahang"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="120dp"
-        android:background="@color/teal_700"
-        android:text="Mua hàng"
-        android:textColor="@color/white"
-        android:textSize="15sp" />
 
 </LinearLayout>

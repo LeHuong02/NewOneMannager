@@ -1,5 +1,6 @@
 package com.example.newonemannager.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.newonemannager.API.ApiService;
+import com.example.newonemannager.Activity.ThongtinKHActivity;
 import com.example.newonemannager.Adapter.DoUongAdapter;
 import com.example.newonemannager.Adapter.LoaiDoUongAdapter;
 import com.example.newonemannager.Models.CategoryOfFood;
@@ -62,13 +64,18 @@ public class HomeFragment extends Fragment {
         lv_foryou.setAdapter(adapterForYou);
         loaiDoUongAdapter = new LoaiDoUongAdapter(getContext(), categoryOfFoodList);
         lv_category.setAdapter(loaiDoUongAdapter);
-
     }
 
     private void init(View view) {
         lv_food = view.findViewById(R.id.lv_food);
         lv_foryou = view.findViewById(R.id.lv_foryou);
         lv_category = view.findViewById(R.id.lv_category);
+        view.findViewById(R.id.img_3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), ThongtinKHActivity.class));
+            }
+        });
     }
 
     private void loadData() {

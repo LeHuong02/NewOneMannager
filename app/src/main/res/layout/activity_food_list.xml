@@ -76,10 +76,7 @@
                 android:textColor="@color/teal_700"
                 android:textSize="15sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0" />
+
 
             <Spinner
                 android:id="@+id/spinner_1"
@@ -97,10 +94,7 @@
                 android:textColor="@color/teal_700"
                 android:textSize="15sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0" />
+
 
             <Spinner
                 android:id="@+id/spinner_2"
@@ -118,10 +112,7 @@
                 android:textColor="@color/teal_700"
                 android:textSize="15sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0" />
+
 
             <Spinner
                 android:id="@+id/spinner_3"

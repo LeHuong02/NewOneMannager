@@ -66,6 +66,6 @@ public class VerificationFragment extends Fragment {
     private void anhXa(View view) {
         lv_giohang = view.findViewById(R.id.lv_giohang);
         tv_sum = view.findViewById(R.id.tv_sum);
-        btn_dathang.findViewById(R.id.btn_muahang);
+        btn_dathang = view.findViewById(R.id.btn_muahang);
     }
 }

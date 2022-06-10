@@ -124,7 +124,7 @@ public class PayActivity extends AppCompatActivity {
     private void anhXa() {
         lv_giohang = findViewById(R.id.lv_giohang);
         tv_sum = findViewById(R.id.tv_sum_final);
-        btn_dathang = findViewById(R.id.btn_muahang);
+        btn_dathang = findViewById(R.id.btn_buy);
         edt_address = findViewById(R.id.edt_address);
         edt_phone_number = findViewById(R.id.edt_phone_number);
         edt_note = findViewById(R.id.edt_note);

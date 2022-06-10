@@ -47,8 +47,11 @@
             android:name=".Activity.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".Activity.DangNhapActivity" />
+
         <activity android:name=".Activity.DangKyActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
