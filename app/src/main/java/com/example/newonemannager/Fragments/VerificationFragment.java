@@ -1,66 +1,71 @@
 package com.example.newonemannager.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.newonemannager.Activity.PayActivity;
+import com.example.newonemannager.Adapter.CartAdapter;
+import com.example.newonemannager.Models.Cart;
+import com.example.newonemannager.Models.Common;
 import com.example.newonemannager.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link VerificationFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class VerificationFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public VerificationFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment VerificationFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static VerificationFragment newInstance(String param1, String param2) {
-        VerificationFragment fragment = new VerificationFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_verification, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        anhXa(view);
+        loadGioHang();
+        btn_dathang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), PayActivity.class));
+            }
+        });
+    }
+
+    RecyclerView lv_giohang;
+    TextView tv_sum;
+    Button btn_dathang;
+    CartAdapter cartAdapter;
+
+    private void loadGioHang() {
+        if (Common.cartList != null) {
+            cartAdapter = new CartAdapter(getContext());
+            lv_giohang.setAdapter(cartAdapter);
+            int tong = 0;
+            for (Cart cart : Common.cartList
+            ) {
+                tong += cart.getSum();
+            }
+            tv_sum.setText(tong + " vnd");
+        }
+
+
+    }
+
+
+    private void anhXa(View view) {
+        lv_giohang = view.findViewById(R.id.lv_giohang);
+        tv_sum = view.findViewById(R.id.tv_sum);
+        btn_dathang.findViewById(R.id.btn_muahang);
     }
 }

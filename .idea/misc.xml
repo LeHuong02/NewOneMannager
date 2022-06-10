@@ -10,18 +10,21 @@
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/activity_maps.xml" value="0.36666666666666664" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/activity_nhan_vien.xml" value="0.36666666666666664" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/activity_order.xml" value="0.36666666666666664" />
+        <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/activity_pay.xml" value="0.26979166666666665" />
+        <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/activity_thongtin_k_h.xml" value="0.36666666666666664" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/activity_tim_kiem.xml" value="0.36666666666666664" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/activity_trang_chu.xml" value="0.2" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/fragment_order.xml" value="0.22" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/fragment_verification.xml" value="0.22" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/item_food.xml" value="0.25" />
+        <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/item_giohang.xml" value="0.26979166666666665" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/layout/item_sanpham.xml" value="0.25" />
         <entry key="..\:/LamThue/NewOneMannager/app/src/main/res/menu/bottom_menu.xml" value="0.10740740740740741" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

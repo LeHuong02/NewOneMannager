@@ -10,23 +10,29 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.example.newonemannager.Models.Cart;
 import com.example.newonemannager.Models.Common;
 import com.example.newonemannager.R;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 public class OrderActivity extends AppCompatActivity {
 
     ImageView img_hinhanh;
     TextView tv_ten;
-    int gia = 25000;
+    int[] gias = new int[]{20000, 25000, 30000, 35000, 40000, 45000, 50000};
     int so = 0;
     TextView tv_giatien;
     TextView tv_so;
+    int gia;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
         init();
+        gia = gias[new Random().nextInt(6)];
         tv_giatien.setText("đ0.0");
         tv_so.setText("0");
         if (Common.food != null) {
@@ -74,6 +80,16 @@ public class OrderActivity extends AppCompatActivity {
         findViewById(R.id.btn_giohang).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (Common.cartList == null) {
+                    Common.cartList = new ArrayList<>();
+                }
+
+                String name = Common.food.getName();
+                int price = gia;
+                String image = Common.food.getImage();
+                int quantity = so;
+                Cart cart = new Cart(name, price, quantity, image);
+                Common.cartList.add(cart);
                 AlertDialog.Builder builder = new AlertDialog.Builder(OrderActivity.this);
                 builder.setTitle("Thêm giỏ hàng thành công");
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
