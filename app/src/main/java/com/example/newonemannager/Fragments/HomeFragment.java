@@ -1,12 +1,9 @@
 package com.example.newonemannager.Fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.GridView;
 
 import androidx.annotation.NonNull;
@@ -14,11 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.newonemannager.API.ApiService;
-import com.example.newonemannager.Activity.FoodListActivity;
 import com.example.newonemannager.Adapter.DoUongAdapter;
 import com.example.newonemannager.Adapter.LoaiDoUongAdapter;
 import com.example.newonemannager.Models.CategoryOfFood;
-import com.example.newonemannager.Models.Common;
 import com.example.newonemannager.Models.Food;
 import com.example.newonemannager.R;
 

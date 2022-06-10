@@ -3,6 +3,7 @@ package com.example.newonemannager.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -52,6 +53,8 @@ public class DangNhapActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<Account> call, Throwable t) {
+                        dialog.dismiss();
+                        Log.e("hi",t.getMessage());
 
                     }
                 });
